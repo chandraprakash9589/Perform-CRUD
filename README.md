@@ -1,4 +1,4 @@
-# Prisma_Crash_Course
+
 
 ## To Setup project in your machine hit below command
 
