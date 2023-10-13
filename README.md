@@ -4,14 +4,13 @@
 
 `npm install`
 
-### After this command create new file .env and paste .env.example file code to in this file
+**Do that**
 
-**After that**
-
-Just change your password with my name and if you have different DB name then change it from **prismaDB**
 command
 npm install
-npx prisma migrate dev
-npx prisma generate prisma 
-docker build -t image name
+npx prisma migrate dev //to create database
+npx prisma generate prisma //to create schema
+docker build -t image name .//to create image
+docker run -d -p local port:3000 image name
 docker-compose up -d
+npm start

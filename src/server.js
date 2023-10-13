@@ -35,12 +35,13 @@ app.get("/tasks/:id", async (req, res) => {
 // Update a task by ID
 app.put("/tasks/:id", async (req, res) => {
   const { id } = req.params;
-  const { title, description } = req.body;
+  const { name, email,password } = req.body;
   const updatedTask = await prisma.task.update({
     where: { id: parseInt(id) },
     data: {
-      title,
-      description,
+      name,
+      email,
+      password
     },
   });
   res.json(updatedTask);
